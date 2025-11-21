@@ -162,6 +162,11 @@ public class ShannonLoader extends BinaryLoader
             new PatternEntry(String.join("\n",
               "\\x2C\\x00\\x8F\\xE2\\x00\\x0C\\x90\\xE8\\x00\\xA0\\x8A\\xE0\\x00\\xB0\\x8B\\xE0"
               ), PatternEntry.PatternType.CODE32
+            ),
+            // New ARM scatterload function (e.g. g5400i)
+            new PatternEntry(String.join("\n",
+              "\\x5c\\x60\\x8f\\xe2\\x00\\x0c\\x96\\xe8\\x06\\xa0\\x8a\\xe0\\x06\\xb0\\x8b\\xe0"
+              ), PatternEntry.PatternType.CODE32
             )
           )
         ),
