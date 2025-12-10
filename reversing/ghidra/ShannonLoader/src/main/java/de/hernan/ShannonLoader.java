@@ -132,6 +132,14 @@ public class ShannonLoader extends BinaryLoader
               "\\x00\\x00\\x00\\x40 # matches next range phys start address",
               "\\x00\\x00\\x00\\x40 # matches next range virt start address"
               )
+            ),
+            new PatternEntry(String.join("\n",
+              "# pattern for s5123",
+              "\\x01\\x00\\x00\\x00",
+              "\\x00\\x00\\x00\\x00",
+              "\\x00\\x00\\x00\\x00",
+              "\\x0c\\x94\\x01\\x00"
+              )
             )
           )
         ),
@@ -360,8 +368,10 @@ public class ShannonLoader extends BinaryLoader
         monitor.incrementProgress(10);
 
         PatternFinder finder = new PatternFinder(
-            settings.provider().getInputStream(sec_main.getOffset()), sec_main.getSize(),
-            patternDB);
+            settings.provider().getInputStream(sec_main.getOffset()),
+            sec_main.getSize(),
+            patternDB
+        );
 
         monitor.incrementProgress(5);
 
