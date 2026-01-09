@@ -42,6 +42,6 @@ IMPORT_AS=$(basename "$FIRMWARE")
 echo "====> Imported binary will be called $IMPORT_AS in $PROJECT"
 
 echo "====> Running Ghidra headless for $FIRMWARE"
-./scripts/ShannonFirmwareProcess.py "$PROJECT" "$IMPORT_AS" "$FIRMWARE"
+./data/headless/ShannonFirmwareProcess.py "$PROJECT" "$IMPORT_AS" "$FIRMWARE"
 
 exit 0
