@@ -1,4 +1,6 @@
-## ShannonLoader
+## ShannonLoader (Archive)
+
+**26/10: This repository is archived. For upstream development, please visit https://github.com/FirmWire/ShannonLoader**
 
 This repository is a standalone version and continuation of Grant Hernandez' [ShannonLoader](https://github.com/grant-h/ShannonBaseband/tree/master/reversing/ghidra/ShannonLoader).
 
